@@ -1,0 +1,30 @@
+---
+clone:
+  git:
+    image: plugins/git
+    recursive: true
+
+pipeline:
+
+  build:
+    image: python:alpine
+    commands:
+      - pip install mkdocs mkdocs-material markdown-include
+      - mkdocs build
+    when:
+      event: pull_request
+
+  deploy:
+    image: python:alpine
+    commands:
+      - apk add -U openssh git-fast-import
+      - mkdir /root/.ssh && echo -n "$SSH_KEY" > /root/.ssh/id_rsa && chmod 600 /root/.ssh/id_rsa
+      - touch /root/.ssh/known_hosts && chmod 600 /root/.ssh/known_hosts && ssh-keyscan -H github.com > /etc/ssh/ssh_known_hosts 2> /dev/null
+      - git remote remove origin && git remote add origin git@github.com:UKHomeOffice/central-operations-platform.git
+      - pip install mkdocs mkdocs-material markdown-include
+      - mkdocs gh-deploy --force
+    secrets:
+    - SSH_KEY
+    when:
+      event: push
+      branch: master
