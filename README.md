@@ -11,6 +11,7 @@ It is inspired by GitLab's [Handbook](https://about.gitlab.com/handbook/).
 
 **[TO DO]** Contribution guide
 
+
 ### Building locally
 
 This project require Python 3 to build.

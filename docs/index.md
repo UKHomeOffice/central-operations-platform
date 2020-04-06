@@ -67,3 +67,4 @@ replaced with links to these pages.*
     - Roadmap
     - Release Cycle
     - Technical Documentation
+        - [Integrate a service with SysDig via prometheus client](how-to/integrate-service-sysdig.md)
