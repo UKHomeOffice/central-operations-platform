@@ -98,7 +98,12 @@ To develop COP products you will have the following accounts:
 The O365 accounts govern access to:
 - GitLab (for closed source projects)
 - Keycloak (for role-based access)
-- JIRA and JIRA Service Desk (for development tickets and incident management)
+- COP JIRA and JIRA Service Desk (for development tickets and incident management)
 - ACP Hub and Kubernetes clusters
 - VPNs
 - Matomo (for web analytics)
+- Home Office Confluence
+
+### Developer Onboarding Process
+
+For developer onboarding, please follow our [guide](developer-onboarding.md)
