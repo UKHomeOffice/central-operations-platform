@@ -59,7 +59,15 @@ development environments are consistent.
 
 We manage our AWS resources using Terraform.
 
-*[Belinda to add some more info]*
+Within the AWS accounts managed by the COP team, DNS and SES configuration are not managed
+by terraform. RDS and SQS is managed by ACP in the HO AWS account. Everything else should
+be in https://gitlab.digital.homeoffice.gov.uk/cop/terraform.
+
+The terraform covers resources in 3 AWS accounts
+
+* bf-it-pra (Production - staging and production)
+* bf-it-devtest (Non production - dev)
+* bf-it-cop (Databricks production)
 
 ### Azure
 
