@@ -46,6 +46,7 @@ replaced with links to these pages.*
 ## Product Engineering
 
 - [Product Engineering](product-engineering.md)
+    - Agile Process
     - User Experience (UX)
         - UX Research
         - Assisted Digital
@@ -56,8 +57,14 @@ replaced with links to these pages.*
     - Infrastructure Engineering
     - Quality Assurance
     - Security
-        - Security Practices
-    - Support
+    - Tooling
+
+## Lives Services
+
+- [Live Services](live-services.md)
+    - Service Levels
+    - Service Desk
+    - Incident Management
 
 
 ## Core Platform
