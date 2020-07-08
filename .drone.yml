@@ -19,7 +19,7 @@ pipeline:
   deploy:
     image: python:3.8-slim-buster
     commands:
-      - apk add -U openssh git-fast-import
+      - apt-get update && apt-get install git -y
       - mkdir /root/.ssh && echo -n "$SSH_KEY" > /root/.ssh/id_rsa && chmod 600 /root/.ssh/id_rsa
       - touch /root/.ssh/known_hosts && chmod 600 /root/.ssh/known_hosts && ssh-keyscan -H github.com > /etc/ssh/ssh_known_hosts 2> /dev/null
       - git remote remove origin && git remote add origin git@github.com:UKHomeOffice/central-operations-platform.git
@@ -30,3 +30,21 @@ pipeline:
     when:
       event: push
       branch: master
+
+  notify:
+    image: plugins/slack
+    secrets: [ SLACK_WEBHOOK ]
+    channel: cop-deployments
+    username: Drone Build Watcher
+    template: >
+      {{#build.deployTo}}
+        *{{repo.name}} - Build {{build.number}} - {{uppercasefirst build.deployTo}} - {{uppercase build.status}}*
+        {{build.link}}
+      {{else}}
+        *{{repo.name}} - Build {{build.number}} - Development - {{uppercase build.status}}*
+        {{build.link}}
+      {{/build.deployTo}}
+    when:
+      branch: master
+      event: [ push, deployment ]
+      status: [ success, failure ]
