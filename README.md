@@ -13,7 +13,7 @@ It is inspired by GitLab's [Handbook](https://about.gitlab.com/handbook/).
 
 ### Building locally
 
-This project require Python 3 to build.
+This project requires Python 3 to build.
 
 ```
 python3 -m venv cop-docs
