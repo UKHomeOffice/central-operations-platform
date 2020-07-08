@@ -8,6 +8,8 @@ nav:
   - Product Management: product-management.md
   - Product Engineering: product-engineering.md
   - Core Platform: core-platform.md
+  - Developer Onboarding: developer-onboarding.md
+  - Live Services: live-services.md
 
 markdown_extensions:
   - toc:
