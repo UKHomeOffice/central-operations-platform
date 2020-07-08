@@ -7,15 +7,17 @@ clone:
 pipeline:
 
   build:
-    image: python:alpine
+    image: python:3.8-slim-buster
     commands:
       - pip install mkdocs mkdocs-material markdown-include
       - mkdocs build
     when:
-      event: pull_request
+      event:
+        - push
+        - pull_request
 
   deploy:
-    image: python:alpine
+    image: python:3.8-slim-buster
     commands:
       - apk add -U openssh git-fast-import
       - mkdir /root/.ssh && echo -n "$SSH_KEY" > /root/.ssh/id_rsa && chmod 600 /root/.ssh/id_rsa
