@@ -80,7 +80,8 @@ Some services require additional roles to be set in the COP Keycloak realms.
 
 ## 9. AWS
 
-Some developers will require AWS credentials. _TBC_
+Some developers will require AWS credentials. Follow the AWS IAM & New User/Account
+Request How To on confluece located here https://collaboration.homeoffice.gov.uk/pages/viewpage.action?pageId=100319746 
 
 ## x. Home Office Confluence
 
@@ -93,3 +94,9 @@ _TBC_
 ### x.y Formbuilder
 
 ### x.y Matomo
+
+Matomo Add user - Admins can add a user by clicking on the cog icon on the top left of the screen, followed by users under the left hand utility menu. Here they can request a users credentials to be sent via email . A new user would then be prompted to change their password on initial login
+
+
+
+
