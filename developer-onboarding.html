@@ -1,0 +1,665 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>Developer Onboarding - Central Operations Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#developer-onboarding" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="Central Operations Platform" class="md-header-nav__button md-logo" aria-label="Central Operations Platform">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Central Operations Platform
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Developer Onboarding
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Central Operations Platform" class="md-nav__button md-logo" aria-label="Central Operations Platform">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Central Operations Platform
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="organisation.html" title="Organisation" class="md-nav__link">
+      Organisation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="business-management.html" title="Business Management" class="md-nav__link">
+      Business Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="product-management.html" title="Product Management" class="md-nav__link">
+      Product Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="product-engineering.html" title="Product Engineering" class="md-nav__link">
+      Product Engineering
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="core-platform.html" title="Core Platform" class="md-nav__link">
+      Core Platform
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Developer Onboarding
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="developer-onboarding.html" title="Developer Onboarding" class="md-nav__link md-nav__link--active">
+      Developer Onboarding
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-home-office-office-365-accounts" class="md-nav__link">
+    1. Home Office Office 365 accounts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    2. GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-acp-gitlab" class="md-nav__link">
+    3. ACP GitLab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cop-jira-and-jira-service-desk" class="md-nav__link">
+    4. COP JIRA and JIRA Service Desk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-home-office-slack" class="md-nav__link">
+    5. Home Office Slack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-acp-vpns" class="md-nav__link">
+    6. ACP VPNs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-acp-hub-and-kubernetes-clusters" class="md-nav__link">
+    7. ACP Hub and Kubernetes clusters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-acp-keycloak" class="md-nav__link">
+    8. ACP Keycloak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-aws" class="md-nav__link">
+    9. AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-home-office-confluence" class="md-nav__link">
+    x. Home Office Confluence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-other-cop-services" class="md-nav__link">
+    x. Other COP services
+  </a>
+  
+    <nav class="md-nav" aria-label="x. Other COP services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xy-camunda" class="md-nav__link">
+    x.y Camunda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xy-formbuilder" class="md-nav__link">
+    x.y Formbuilder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xy-matomo" class="md-nav__link">
+    x.y Matomo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="live-services.html" title="Live Services" class="md-nav__link">
+      Live Services
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-home-office-office-365-accounts" class="md-nav__link">
+    1. Home Office Office 365 accounts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    2. GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-acp-gitlab" class="md-nav__link">
+    3. ACP GitLab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cop-jira-and-jira-service-desk" class="md-nav__link">
+    4. COP JIRA and JIRA Service Desk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-home-office-slack" class="md-nav__link">
+    5. Home Office Slack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-acp-vpns" class="md-nav__link">
+    6. ACP VPNs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-acp-hub-and-kubernetes-clusters" class="md-nav__link">
+    7. ACP Hub and Kubernetes clusters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-acp-keycloak" class="md-nav__link">
+    8. ACP Keycloak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-aws" class="md-nav__link">
+    9. AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-home-office-confluence" class="md-nav__link">
+    x. Home Office Confluence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x-other-cop-services" class="md-nav__link">
+    x. Other COP services
+  </a>
+  
+    <nav class="md-nav" aria-label="x. Other COP services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xy-camunda" class="md-nav__link">
+    x.y Camunda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xy-formbuilder" class="md-nav__link">
+    x.y Formbuilder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xy-matomo" class="md-nav__link">
+    x.y Matomo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="developer-onboarding">Developer Onboarding<a class="headerlink" href="#developer-onboarding" title="Permanent link">#</a></h1>
+<p>This section covers the "how to" for getting a new developer onboarded to our
+development systems.</p>
+<p><strong>All COP developers must have SC clearance in place before being given access to the following accounts and systems.</strong></p>
+<h2 id="1-home-office-office-365-accounts">1. Home Office Office 365 accounts<a class="headerlink" href="#1-home-office-office-365-accounts" title="Permanent link">#</a></h2>
+<p>Developers require a Home Office O365 account to access most of the developer
+services and tools.</p>
+<p>This can be requested by emailing <em>xxx</em>. The request must come from COP's
+approved requestors.</p>
+<h2 id="2-github">2. GitHub<a class="headerlink" href="#2-github" title="Permanent link">#</a></h2>
+<p>The developer can add their GitHub account to the UKHomeOffice GitHub
+organisation via the Hub's 'Services Onboarding':
+https://hub.acp.homeoffice.gov.uk/onboarding/services</p>
+<p>Once done, the COP Admins will need to add the developers account to the
+<code>COP Developers</code> team, which will provide permissions to the COP projects.s</p>
+<p><strong>NOTE: You need to sign all your commits with GPG when pushing your code, please refer to <a href="https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification">Managing commit signature verification</a> and get your account setup before pushing.</strong></p>
+<h2 id="3-acp-gitlab">3. ACP GitLab<a class="headerlink" href="#3-acp-gitlab" title="Permanent link">#</a></h2>
+<p>Using their O365 account, the developer needs to log into ACP GitLab:
+https://gitlab.digital.homeoffice.gov.uk</p>
+<p>Once done, a COP Admin can add the developer to the COP group:
+https://gitlab.digital.homeoffice.gov.uk/groups/cop/-/group_members</p>
+<p><strong>NOTE: You need to sign all your commits with GPG when pushing your code, please refer to <a href="https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/">Signing commits with GPG</a> and get your account setup before pushing.</strong></p>
+<h2 id="4-cop-jira-and-jira-service-desk">4. COP JIRA and JIRA Service Desk<a class="headerlink" href="#4-cop-jira-and-jira-service-desk" title="Permanent link">#</a></h2>
+<p>Using their O365 account, the developer needs to log into COP JIRA:</p>
+<p>Once the developer has logged in, they will initially only have access to the
+Customer Portal. A COP Admin needs to assign the <code>COP JIRA user</code> role in our
+Production Keycloak realm. The developer then needs to log out and in again to
+inherit the correct permissions via SSO.</p>
+<h2 id="5-home-office-slack">5. Home Office Slack<a class="headerlink" href="#5-home-office-slack" title="Permanent link">#</a></h2>
+<p>Using their O365 account, the developer can create an account at:
+https://hod-dsp.slack.com/#/</p>
+<p>They then need to be added to the relevant private channels, based on their
+role.</p>
+<h2 id="6-acp-vpns">6. ACP VPNs<a class="headerlink" href="#6-acp-vpns" title="Permanent link">#</a></h2>
+<p>Using their O365 account, the developer can log into
+https://remote-access.vpn.acp.homeoffice.gov.uk/</p>
+<p>For some of the following steps, they must be on the <code>KUBE-PLATFORM</code> VPN.</p>
+<h2 id="7-acp-hub-and-kubernetes-clusters">7. ACP Hub and Kubernetes clusters<a class="headerlink" href="#7-acp-hub-and-kubernetes-clusters" title="Permanent link">#</a></h2>
+<p>The developer needs to connect to the KUBE-PLATFORM VPN and then log into the
+ACP Hub: https://hub.acp.homeoffice.gov.uk/</p>
+<p>Once done, a COP Admin can add the developer to the COP project and create
+suitable tokens:
+https://hub.acp.homeoffice.gov.uk/projects/detail/cop</p>
+<p>The developer can follow the guides linked to from the Hub to set up their
+Kubernetes access credentials, along with accessing other shared services:</p>
+<ul>
+<li>Kibana</li>
+<li>Drone (GitLab and GitHub)</li>
+</ul>
+<h2 id="8-acp-keycloak">8. ACP Keycloak<a class="headerlink" href="#8-acp-keycloak" title="Permanent link">#</a></h2>
+<p>When accessing COP Services, the developer will need to log in via Keycloak.
+Some services require additional roles to be set in the COP Keycloak realms.</p>
+<h2 id="9-aws">9. AWS<a class="headerlink" href="#9-aws" title="Permanent link">#</a></h2>
+<p>Some developers will require AWS credentials. Follow the AWS IAM &amp; New User/Account
+Request How To on confluece located here https://collaboration.homeoffice.gov.uk/pages/viewpage.action?pageId=100319746 </p>
+<h2 id="x-home-office-confluence">x. Home Office Confluence<a class="headerlink" href="#x-home-office-confluence" title="Permanent link">#</a></h2>
+<p><em>TBC</em></p>
+<h2 id="x-other-cop-services">x. Other COP services<a class="headerlink" href="#x-other-cop-services" title="Permanent link">#</a></h2>
+<h3 id="xy-camunda">x.y Camunda<a class="headerlink" href="#xy-camunda" title="Permanent link">#</a></h3>
+<h3 id="xy-formbuilder">x.y Formbuilder<a class="headerlink" href="#xy-formbuilder" title="Permanent link">#</a></h3>
+<h3 id="xy-matomo">x.y Matomo<a class="headerlink" href="#xy-matomo" title="Permanent link">#</a></h3>
+<p>Matomo Add user - Admins can add a user by clicking on the cog icon on the top left of the screen, followed by users under the left hand utility menu. Here they can request a users credentials to be sent via email . A new user would then be prompted to change their password on initial login</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="core-platform.html" title="Core Platform" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Core Platform
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="live-services.html" title="Live Services" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Live Services
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
